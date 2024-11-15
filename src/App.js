@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Dashboard from "./components/Dashboard";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="bg-gray-50 min-h-screen flex flex-col items-center">
+      <header className="py-8 w-full bg-blue-600 text-white text-center text-4xl font-bold">
+        AI-Generated Personalized Financial Forecasting NFTs
       </header>
+      <Dashboard />
     </div>
   );
-}
+};
 
 export default App;
